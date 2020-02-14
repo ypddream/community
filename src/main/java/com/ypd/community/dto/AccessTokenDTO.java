@@ -1,10 +1,7 @@
 package com.ypd.community.dto;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.fasterxml.jackson.annotation.JsonFilter;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
 
@@ -16,6 +13,7 @@ import java.io.Serializable;
  * @Date:2020/2/10 0010 下午 7:38
  * @author:ypd
  */
+@ToString
 public class AccessTokenDTO implements Serializable {
     @JSONField(name = "client_id")
     private String client_id;
